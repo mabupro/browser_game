@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Tile Memory Game</title>
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="info-board">
+            <div id="score-board">Score: <span id="score">0</span></div>
+            <div id="timer-board">Timer: <span id="timer">15</span></div>
+            <div id="stage-board">Stage: <span id="stage">1</span></div>
+        </div>
+        <div id="game-container">
+            <div id="game-board" class="game-board">
+                <!-- JavaScript -->
+            </div>
+
+            <button id="next-button" disabled>Next</button>
+
+            <div id="start-message">Press any key to start...</div>
+        </div>
+    </div>
+
+    <audio id="click-sound" src="./public/clicksound.mp3" preload="auto"></audio>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

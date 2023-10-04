@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eee;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button#next-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #f5a623;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+}
+
+button#next-button:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+button#next-button:hover:not(:disabled) {
+    background-color: #ffcc00;
+}
+
+button#next-button:active:not(:disabled) {
+    background-color: #cc8400;
+}
+
+#start-message {
+    font-size: 16px;
+    color: #f5a623;
+    display: block;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#main-container {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #76442D;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+#info-board {
+    display: flex;
+    justify-content: space-between;
+    width: calc(10 * 50px + 60px);
+    /* 10 tiles * width + padding */
+    padding: 10px 20px;
+    background-color: #eee;
+    color: #76442D;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#game-container {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#score-board,
+#timer-board,
+#stage-board {
+    color: #76442D;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    margin: 0 15px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    padding: 15px;
+    background-color: #76442D;
+    border-radius: 15px;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    background-color: #9B5A33;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.tile.white {
+    background-color: white;
+}
