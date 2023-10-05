@@ -40,13 +40,6 @@ function resetScore() {
     document.getElementById('score').textContent = score;
 }
 
-// スペースキーが押されたときにゲームを開始
-window.addEventListener('keydown', function (event) {
-    if (event.code === 'Space') {
-        startGame();
-    }
-});
-
 // タイルを生成
 for (let i = 0; i < totalTiles; i++) {
     let tile = document.createElement('div');
